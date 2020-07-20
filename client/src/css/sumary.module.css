@@ -1,0 +1,11 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin: 5px;
+  font-size: 14px;
+  padding: 5px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
