@@ -9,11 +9,12 @@
     "@testing-library/user-event": "7.1.2",
     "axios": "0.19.2",
     "lodash": "4.17.19",
-    "materialize-css": "1.0.0",
+    "materialize-css": "1.0.0-rc.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-modal": "3.11.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "websocket-extensions": "0.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
