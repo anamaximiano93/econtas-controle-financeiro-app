@@ -1,0 +1,45 @@
+.addContainer {
+  margin-right: 0.5rem;
+  /*  padding: 0.1rem; 
+  line-height: 70px;*/
+}
+
+.addContainer button {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-self: start;
+  background: red;
+  width: auto;
+  background: #f7fff7;
+
+  color: #222831;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  height: 2.5rem;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+  border: none;
+}
+.addContainer button i {
+  font-size: 1.5rem;
+}
+
+.addContainer button:hover {
+  background: #ff6b6ba9;
+}
+.addContainer button:active {
+  background: #ff6b6bfb;
+}
+.addContainer button:focus {
+  background: #fc6363fb;
+}
+
+/* modo dark */
+
+.addContainer.dark button:hover {
+  background: #f05454;
+  color: #f7fff7;
+}

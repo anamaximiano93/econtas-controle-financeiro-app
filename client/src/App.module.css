@@ -1,9 +1,0 @@
-.flexRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: baseline;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-}

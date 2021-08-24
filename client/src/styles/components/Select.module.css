@@ -1,0 +1,76 @@
+.selectContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectContainer select {
+  width: 250px;
+  line-height: normal;
+  display: block !important;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center !important;
+  /*  text-align: center !important;
+  text-transform: capitalize !important; */
+}
+
+.selectContainer select option {
+  font-size: 1.25rem;
+}
+
+.selectContainer select option:checked {
+  background: #ff6b6ba9;
+  color: #f7fff7;
+}
+
+.selectContainer button {
+  background: #f7fff7;
+  width: 50px;
+  height: 40px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+  border: none;
+  margin: 0.2rem;
+}
+
+.selectContainer button i {
+  font-size: 30px !important;
+}
+
+.selectContainer button:hover {
+  background: #ff6b6ba9;
+}
+.selectContainer button:active {
+  background: #ff6b6bfb;
+}
+.selectContainer button:focus {
+  background: #fc6363fb;
+}
+
+/* modo dark */
+
+.selectContainer.dark select {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.685);
+  background: rgba(221, 221, 221, 0.925) !important;
+}
+
+.selectContainer.dark select option:checked {
+  background: #f05454;
+  color: #f7fff7;
+}
+
+.selectContainer.dark button:hover {
+  background: #f05454;
+  color: #f7fff7;
+}
+.selectContainer.dark button:active {
+  background: #ff6b6bfb;
+}
+.selectContainer.dark button:focus {
+  background: #fc6363fb;
+}

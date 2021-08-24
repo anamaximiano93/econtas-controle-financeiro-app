@@ -1,0 +1,12 @@
+.mainContainer {
+  min-height: calc(100vh - 80px - 48px);
+}
+.mainContainer.dark {
+  background: rgba(37, 39, 43, 0.918);
+}
+
+@media (max-width: 720px) {
+  main {
+    min-height: calc(100vh - 80px - 36px);
+  }
+}

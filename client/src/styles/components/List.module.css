@@ -1,0 +1,212 @@
+.listContainer {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* .flexRowItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+} */
+.listItemContainer > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+.listItemContainer .listPartOne {
+  /*   display: flex;
+  flex-direction: row;
+  align-items: center; */
+  justify-content: flex-start;
+  /* width: 50%; */
+}
+.listItemContainer .listPartTwo {
+  /*   display: flex;
+  flex-direction: row;
+  align-items: center; */
+  justify-content: flex-end;
+  /* width: 50%; */
+}
+
+.listItemContainer li {
+  list-style-type: none;
+}
+.listItemContainer .listPartOne span {
+  margin: 0.3rem;
+  padding: 0.3rem;
+  margin-right: 10px;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.listItemContainer .listPartOne > div li {
+  text-align: start;
+  margin: 0;
+}
+
+.listItemContainer .listPartOne > div li:first-child {
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+.listItemContainer .listPartOne > div li:last-child {
+  font-size: 1.25rem;
+}
+
+.listItemContainer .listPartTwo span {
+  font-size: 1.6rem;
+  /*  margin-right: 3rem; */
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.listItemContainer .listPartTwo div {
+  padding: 1rem;
+  cursor: pointer;
+  background: #f7fff7;
+  border-radius: 0 5px 5px 0;
+  color: #222831;
+
+  /*   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.listItemContainer .listPartTwo i:hover {
+  color: #ff6b6ba9;
+}
+.listItemContainer .listPartTwo i:active {
+  color: #ff6b6bfb;
+}
+.listItemContainer .listPartTwo i:focus {
+  color: #fc6363fb;
+}
+
+/*  media quires */
+
+@media (max-width: 720px) {
+  .listItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+    border-radius: 5px;
+  }
+
+  .listItemContainer .listPartOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+  }
+  .listItemContainer .listPartTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .listItemContainer .listPartTwo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+/*  modo dark */
+
+.listItemContainer.dark .listPartTwo div {
+  padding: 1rem;
+  cursor: pointer;
+  background: #dddddd;
+  border-radius: 0 5px 5px 0;
+  color: #222831;
+
+  /*   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.listItemContainer.dark .listPartTwo i:hover {
+  color: #f05454;
+}
+
+/* .label_ {
+  margin-left: 0.3rem;
+  line-height: 1.25rem;
+}
+
+.label_,
+li,
+span {
+  text-align: start;
+  margin: 0;
+}
+
+.label_ li {
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+.label_ span {
+  font-size: 1.25rem;
+}
+
+.label_Item {
+  font-weight: bold;
+  font-size: 1.2rem;
+} */
+
+/* .money {
+  font-size: 1.6rem;
+  margin-right: 3rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container_icons {
+  padding: 1rem;
+  cursor: pointer;
+  background: #f7fff7;
+  border-radius: 0 5px 5px 0;
+  color: black;
+
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.container_icons i:hover {
+  color: #ff6b6ba9;
+}
+.container_icons i:active {
+  color: #ff6b6bfb;
+}
+.container_icons i:focus {
+  color: #fc6363fb;
+} */

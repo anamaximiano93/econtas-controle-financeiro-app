@@ -1,40 +1,30 @@
 const getMonthAndYear = (year, month) => {
   const date = new Date(year, month); // 2009-11-10
   let monthName = date
-    .toLocaleString("default", { month: "short" })
+    .toLocaleString("default", { month: "long" })
     .toLocaleUpperCase();
 
-  return monthName.slice(0, monthName.length - 1) + "/" + year;
+  return monthName + "/" + year;
 };
 
 const getFullPeriod = () => {
   let d = new Date();
 
-  let yearPast = d.getFullYear() - 1;
-  let yearCurrent = d.getFullYear();
-  let yearFuture = d.getFullYear() + 1;
+  const yearInitial = 2019;
+  //prettier-ignore
+  const valueLength =( d.getFullYear() - yearInitial )+2;
 
   const arr = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < valueLength; i++) {
     for (let y = 1; y <= 12; y++) {
       let valor = y.toString().length === 1 ? "0" + y : y;
 
-      if (i === 0) {
-        arr.push({
-          value: yearPast + "-" + valor,
-          label: getMonthAndYear(yearPast, y - 1),
-        });
-      } else if (i === 1) {
-        arr.push({
-          value: yearCurrent + "-" + valor,
-          label: getMonthAndYear(yearCurrent, y - 1),
-        });
-      } else {
-        arr.push({
-          value: yearFuture + "-" + valor,
-          label: getMonthAndYear(yearFuture, y - 1),
-        });
-      }
+      arr.push({
+        //prettier-ignore
+        value: (yearInitial + i) + "-" + valor,
+        //prettier-ignore
+        label: getMonthAndYear((yearInitial + i), y - 1),
+      });
     }
   }
 
@@ -62,6 +52,18 @@ const getDefauldPeriod = () => {
 
   return obj;
 };
+const getDefauldYear = () => {
+  const d = new Date();
+  let obj = {};
+  let year = d.getFullYear();
+
+  obj = {
+    value: year,
+    label: year.toString(),
+  };
+
+  return obj;
+};
 
 const dataformatpicker = () => {
   const date = new Date();
@@ -80,4 +82,37 @@ const dataformatpicker = () => {
   return `${year}-${day}-${month}`;
 };
 
-export { getDefauldPeriod, getFullPeriod, dataformatpicker };
+const getPagination = (tam) => {
+  const total_page = Math.round(tam / 10);
+  const pagination = Math.round(tam / total_page);
+  console.log(total_page, pagination);
+  return { total_page, pagination };
+};
+
+const getFullYearPeriod = () => {
+  const d = new Date();
+
+  const yearInitial = 2019;
+  //prettier=ignore
+  const valueLength = d.getFullYear() - yearInitial + 2;
+
+  const array = [];
+
+  for (let i = 0; i < valueLength; i++) {
+    array.push({
+      value: yearInitial + i,
+      label: (yearInitial + i).toString(),
+    });
+  }
+
+  return array;
+};
+
+export {
+  getDefauldPeriod,
+  getFullPeriod,
+  dataformatpicker,
+  getPagination,
+  getFullYearPeriod,
+  getDefauldYear,
+};

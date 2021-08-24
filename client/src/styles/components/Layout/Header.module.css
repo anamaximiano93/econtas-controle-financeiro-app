@@ -1,0 +1,114 @@
+.header {
+  background: #f7fff7;
+  /*  height: 64px;
+  line-height: 64px; */
+}
+
+.header a.logo_header > img {
+  object-fit: fill;
+  height: 56px;
+}
+
+.header a {
+  color: #222831;
+  font-weight: 700;
+  font-size: 2.15rem;
+  /* width: 180px; */
+}
+.header li {
+  list-style-type: none;
+}
+.header li a {
+  cursor: pointer;
+}
+.header li a :hover {
+  color: #ff6b6ba9;
+}
+
+.header ul li a {
+  color: #222831;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background: #f7fff7;
+  border-radius: 5px;
+  text-transform: initial;
+
+  transition: ease;
+}
+
+.header ul li a:hover {
+  background: #ff6b6ba9;
+}
+.header ul li a:active {
+  background: #ff6b6bfb;
+}
+
+.header ul li a:focus {
+  background: #fc6363fb;
+}
+
+.header ul li i {
+  cursor: pointer;
+  color: #222831;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 64px;
+}
+.header ul li i:hover {
+  color: #ff6b6ba9;
+}
+
+/*  modo dark */
+
+.header.dark {
+  background: #222831;
+}
+
+.header.dark a {
+  color: #f7fff7;
+}
+
+.header.dark li a {
+  cursor: pointer;
+}
+.header.dark li a :hover {
+  color: #f05454;
+}
+
+.header.dark ul li a {
+  color: #222831;
+  font-size: 1.15rem;
+  font-weight: 500;
+  background: #f7fff7;
+  border-radius: 5px;
+  text-transform: initial;
+
+  transition: ease;
+}
+
+.header.dark ul li a:hover {
+  background: #f05454;
+  color: #f7fff7;
+}
+.header .dark ul li a:active {
+  background: #ff6b6bfb;
+  color: #f7fff7;
+}
+
+.header.dark ul li a:focus {
+  background: #ff6b6bfb;
+  color: #f7fff7;
+}
+
+.header.dark ul li i {
+  cursor: pointer;
+  color: #f7fff7;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 64px;
+}
+.header.dark ul li i:hover {
+  color: #f05454;
+}

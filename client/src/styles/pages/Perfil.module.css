@@ -1,0 +1,177 @@
+.boxContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  min-height: calc(100vh - 80px - 48px) !important;
+  width: 100vw;
+}
+
+.formContainer {
+  /*  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 25rem;
+}
+
+.formContainer h2 {
+  text-align: center;
+}
+
+.formContainer form > div {
+  font-size: 1.25rem !important;
+}
+.formContainer form div input {
+  color: #222831;
+}
+/* .container form input:active {
+    border: none !important;
+  }
+  .container form input:focus {
+    border: none !important;
+    box-shadow: 0 2px 0 0 #26a69a !important;
+     box-shadow: none !important; 
+  } */
+
+.formContainer a {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.formContainer a:hover {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.formContainer button {
+  width: 100%;
+  line-height: auto !important;
+  font-size: 1.8rem;
+  padding: 5px;
+  margin-top: 15px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.formContainer button:hover {
+  background: #ff6b6ba9;
+}
+
+.formContainer button:active {
+  background: #ff6b6bfb;
+}
+.formContainer button:focus {
+  background: #fc6363fb;
+}
+
+.formContainer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  margin: 5px;
+  padding: 5px;
+}
+.formContainer span a {
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.formContainer span a:hover {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+/* modo dark */
+
+.boxContainer.dark {
+  background: rgba(37, 39, 43, 0.918) !important;
+
+  min-height: calc(100vh - 80px - 48px) !important;
+  width: 100vw;
+}
+
+.formContainer.dark h2 {
+  color: #f7fff7;
+}
+
+.boxforgotPassword.dark p {
+  color: #f7fff7;
+}
+.boxforgotPassword.dark div input:focus + label {
+  color: #f05454 !important;
+  font-weight: 600;
+}
+
+.boxforgotPassword.dark div i {
+  color: #f7fff7 !important;
+}
+
+.boxforgotPassword.dark div input:active {
+  border-bottom: 1px solid #f05454 !important;
+  box-shadow: 0 1px 0 0 #f05454 !important;
+}
+.boxforgotPassword.dark div input:focus {
+  border-bottom: 1px solid #f05454 !important;
+  box-shadow: 0 1px 0 0 #f05454 !important;
+}
+
+.formContainer.dark label {
+  color: #dddddd;
+  font-size: 400;
+}
+
+.formContainer.dark form div input {
+  color: #dddddd;
+}
+
+.formContainer.dark form div input:focus + label {
+  color: #f05454 !important;
+  font-weight: 600;
+}
+
+.formContainer.dark form div input:active {
+  border-bottom: 1px solid #f05454 !important;
+  box-shadow: 0 1px 0 0 #f05454 !important;
+}
+.formContainer.dark form div input:focus {
+  border-bottom: 1px solid #f05454 !important;
+  box-shadow: 0 1px 0 0 #f05454 !important;
+}
+
+.formContainer.dark a {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #10b3ff;
+}
+.formContainer.dark a:hover {
+  color: #f05454 !important;
+  font-weight: 500;
+}
+
+.formContainer.dark button:hover {
+  background: #f05454;
+  color: #f7fff7;
+}
+
+.formContainer.dark span {
+  color: #f7fff7;
+}
+
+/* .buttonsRegister {
+    display: flex;
+    flex-direction: row;
+  } */
+
+/* @media (maxwidth: 720px) {
+    .formContainer {
+      /*  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: fit-content;
+    }
+  }
+   */

@@ -1,0 +1,22 @@
+.year {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: #f7fff7;
+  padding: 7px;
+
+  border-radius: 2px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.year label span {
+  /* line-height: 1.5rem !important; */
+  line-height: 10px !important;
+  font-size: 1.25rem !important;
+}
+.year label input {
+  line-height: 1.5rem !important;
+}

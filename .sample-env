@@ -1,1 +1,9 @@
-DB_CONNECTION=
+DB_CONNECTION=mongodb+srv://<user>:<password>@<host>/<cluster>?retryWrites=true&w=majority
+
+REFRESH_TOKEN_SECRET=
+ACCESS_TOKEN_SECRET=
+
+MAILER_HOST=<host>
+MAILER_PORT=<port>
+MAILER_USER=<user>
+MAILER_PASS=<password>

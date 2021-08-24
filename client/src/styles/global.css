@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*  height: 100vh; */
+  /* color: #ffffff; */
+  background: #faf9f9;
+  /*  height: 100vh !important; */
+  /* display: flex !important;
+  flex-direction: column !important; */
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+button,
+textarea {
+  /* font-size: 18px;
+      font-family: "Nunito", sans-serif;
+      font-weight: 400; */
+
+  font: 400 1.125rem/1 "Raleway", sans-serif;
+}

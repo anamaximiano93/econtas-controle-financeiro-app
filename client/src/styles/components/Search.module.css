@@ -1,0 +1,17 @@
+.searchContainer {
+  width: 75%;
+}
+
+.searchContainer input {
+  height: 2.5rem !important;
+  line-height: initial !important;
+  /*  background: lawngreen !important; */
+  margin: auto !important;
+  padding: 2px;
+  color: #222831;
+}
+
+.searchContainer.dark input {
+  color: #f7fff7;
+  padding: 2px;
+}

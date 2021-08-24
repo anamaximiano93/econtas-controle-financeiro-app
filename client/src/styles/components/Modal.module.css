@@ -1,0 +1,160 @@
+.modalHeader {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  border-top: 1px solid rgba(0, 0, 0, 0.144);
+  border-radius: 2px;
+  margin-top: 15px;
+}
+
+.containerInputType {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.63);
+  border-radius: 7px;
+  margin: 10px;
+  margin-top: 24px;
+  padding: 10px;
+}
+
+.containerInputType label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222831;
+}
+.containerInputType label span {
+  line-height: 10px !important;
+}
+.containerInputType label input {
+  line-height: 1.25rem !important;
+}
+.containerInputType label input:checked {
+  line-height: 1.25rem !important;
+}
+
+.containerInputType [type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid rgba(128, 128, 128, 0.699) !important;
+}
+
+.containerInputType [type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #ff6b6bfb;
+}
+
+.containerDescription {
+  margin-top: 30px;
+}
+.containerDescription input {
+  color: #222831;
+}
+
+.valueDate input {
+  color: #222831;
+}
+.valueDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 24px;
+}
+.valueDate > div {
+  margin-right: 5px;
+}
+
+.buttonSave button {
+  background: #f7fff7;
+  width: 50px;
+  height: 40px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+  border: none;
+  margin: 0.5rem;
+  width: 100%;
+  color: #222831;
+  font-size: 1.2rem;
+}
+
+.buttonSave button i {
+  font-size: 30px !important;
+}
+
+.buttonSave button:hover {
+  background: #ff6b6ba9;
+  color: #fff;
+}
+.buttonSave button:active {
+  background: #ff6b6bfb;
+}
+.buttonSave button:focus {
+  background: #fc6363fb;
+}
+
+/* modo dark */
+
+.modalHeader.dark {
+  color: #e0e0e0;
+}
+.form.dark {
+  border-top: 1px solid #e0e0e0;
+}
+
+.form.dark label,
+input {
+  color: #e0e0e0;
+}
+.form.dark .containerInputType {
+  box-shadow: 0 2px 2px 0 #e0e0e0;
+  background: rgb(88, 88, 88);
+}
+.form.dark .containerInputType [type="radio"]:not(:checked) + span:before,
+[type="radio"]:not(:checked) + span:after {
+  border: 2px solid #f7fff7 !important;
+}
+
+.form.dark .containerDescription input {
+  color: #f7fff7;
+}
+
+.form.dark .valueDate input {
+  color: #f7fff7;
+}
+
+.buttonSave.dark button:hover {
+  background: #f05454;
+  color: #fff;
+}
+
+.form.dark .containerInputType [type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid rgba(255, 255, 255, 0.699) !important;
+}
+
+@media (max-width: 720px) {
+  .valueDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .valueDate > div {
+    width: 100%;
+  }
+  .form label,
+  input {
+    font-size: 1rem;
+  }
+}
