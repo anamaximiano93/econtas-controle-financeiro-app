@@ -22,13 +22,13 @@ export default function Login() {
   const [spinner, setSpinner] = useState(false);
 
   useEffect(() => {
-    document.addEventListener("keypress", handleAuthenticate);
+    document.addEventListener("keypress", handleAuthenticateKeyPress);
     return () => {
-      document.removeEventListener("keypress", handleAuthenticate);
+      document.removeEventListener("keypress", handleAuthenticateKeyPress);
     };
   });
 
-  const handleAuthenticate = async (event) => {
+  const handleAuthenticateKeyPress = async (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
       if (email_ === "" || pass_ === "") return;
@@ -43,6 +43,20 @@ export default function Login() {
       setPass_("");
     }
   };
+  const handleAuthenticate = async (event) => {
+    event.preventDefault();
+    if (email_ === "" || pass_ === "") return;
+
+    const data = {
+      email: email_,
+      password: pass_,
+    };
+
+    handleLogin(data);
+    setEmail_("");
+    setPass_("");
+  };
+
   const handleEmailText = (event) => {
     setEmail_(event.target.value);
     setErrorMessage(null);
