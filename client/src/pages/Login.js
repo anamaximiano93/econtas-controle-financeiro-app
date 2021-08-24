@@ -29,18 +29,19 @@ export default function Login() {
   });
 
   const handleAuthenticate = async (event) => {
-    event.preventDefault();
+    if (event.key === "Enter") {
+      event.preventDefault();
+      if (email_ === "" || pass_ === "") return;
 
-    if (email_ === "" || pass_ === "") return;
+      const data = {
+        email: email_,
+        password: pass_,
+      };
 
-    const data = {
-      email: email_,
-      password: pass_,
-    };
-
-    handleLogin(data);
-    setEmail_("");
-    setPass_("");
+      handleLogin(data);
+      setEmail_("");
+      setPass_("");
+    }
   };
   const handleEmailText = (event) => {
     setEmail_(event.target.value);
